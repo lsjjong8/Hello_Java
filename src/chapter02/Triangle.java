@@ -16,5 +16,6 @@ public class Triangle {
 
         // 넓이를 구해서 표시
         System.out.println("넓이는 " + area + "입니다.");
+        System.out.printf("넓이는 %.2f입니다.", area); // 소숫점 2자리까지 출력
     }
 }
