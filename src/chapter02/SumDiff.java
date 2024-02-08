@@ -14,9 +14,10 @@ public class SumDiff {
         System.out.println(82 - 17);
         System.out.println();
 
-        // 계산식과 결과를 println을 2번 써서 표시
+        // 계산식과 결과를 println을 2번 써서 표시해보자
         System.out.println();
         System.out.println();
+        // System.out.println("82 - 17 = " + 82 - 17);
 
         // printf() : Format형 출력 (c언어 문법 자바에서도 지원)
         System.out.printf("82 + 17 = %d\n", 82+17);
