@@ -21,9 +21,20 @@ public class RandomInteger {
         System.out.println("두 자리의 양의 정수 : " + n3);
 
         // 문제 한 자리의 음의 정수
-        // 한자리 양의 정수에 -부호 붙이기(가장 쉬움)
-        int n4 = 0;
+        // 풀이1. 1차원 좌표평면, (-9 ~ -1), (0-9 ~ N-1-9)에 음수 부호
+        int n4 = -9 + rand.nextInt(9);
+
+        // 풀이2. rand.nextInt()의 부호를 -로 바꾸기
+        // offset - rand.nextInt
+        // (-N+1+offset ~ offset)
+        // (-9 ~ -1)
+        // offset = -1, N = 9
+        n4 = -1 - rand.nextInt(9);
+
+        // 풀이3. 한자리 양의 정수에 -부호 붙이기(가장 쉬움)
+        n4 = -n2;
+        n4 = -1 - rand.nextInt(9);
+
         System.out.println("한 자리의 음의 정수 : " + n4);
-        
     }
 }
