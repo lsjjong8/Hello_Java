@@ -21,6 +21,9 @@ public class SumDiff {
 
         // printf() : Format형 출력 (c언어 문법 자바에서도 지원)
         System.out.printf("82 + 17 = %d\n", 82+17);
-        System.out.printf("82 - 17 = %d", 82-17);
+        System.out.printf("82 - 17 = %d\n", 82-17);
+
+        System.out.printf("82 + 17 = %5d\n", 82+17); // 총 5자리 간격으로 출력, 빈공간은 공백
+        System.out.printf("82 - 17 = %5d\n", 82-17);
     }
 }
