@@ -25,5 +25,8 @@ public class ScanInteger {
 
         // 키보드로 입력한 정숫값에 10으로 나눈 나머지 표시
         System.out.println("10으로 나머지 연산한 값은 " + (value%10) + "입니다.");
+
+        // 키보드로 입력한 정숫값을 음수로 변환
+        System.out.println("음수로 변환한 값은 " + (-value) + "입니다.");
     }
 }
