@@ -8,7 +8,10 @@ public class VarSwap {
 
         // a와 b의 값을 바꿔보기
         // 힌트 : 물 컵과 주스 컵를 바꾸려면?
-
+        int temp;
+        temp = a;
+        a = b;
+        b = temp;
 
         // 출력
         System.out.println("a값은 " + a);
