@@ -10,6 +10,10 @@ public class SumAvr {
         x = 63;
         y = 18;
 
+        // 컴파일 오류 발생
+        /*x = 63.4;
+        y = 18.3;*/
+
         System.out.println("x값은 " + x + "입니다.");
         System.out.println("y값은 " + y + "입니다.");
         System.out.println("합계는 " + (x+y) + "입니다.");
