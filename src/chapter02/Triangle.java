@@ -12,7 +12,9 @@ public class Triangle {
         System.out.print("높이를 입력하세요 : ");
         double height = sc.nextDouble();
 
+        double area = width * height / 2; // 2는 정수형 리터럴, 형변환 나중에 설명
+
         // 넓이를 구해서 표시
-        System.out.println("넓이는 " + (width * height / 2) + "입니다.");
+        System.out.println("넓이는 " + area + "입니다.");
     }
 }
