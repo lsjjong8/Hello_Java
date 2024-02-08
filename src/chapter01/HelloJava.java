@@ -2,7 +2,7 @@ package chapter01;
 
 // 주석 : 메모용, 코드 아님
 public class HelloJava {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println("Hello, World!");
 
         // 출력문
