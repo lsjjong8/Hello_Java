@@ -22,5 +22,11 @@ public class CharCaseConv {
 
         // char은 음수 대입 불가
         // char ch3 = -1;
+
+        char ch4 = '한';
+        char ch5 = '\uD55C';
+
+        System.out.println(ch4);
+        System.out.println(ch5);
     }
 }
