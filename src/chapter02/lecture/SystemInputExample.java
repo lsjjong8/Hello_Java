@@ -12,3 +12,4 @@ public class SystemInputExample {
         } while (keyCode != 113);
     }
 }
+// char로하면 한글이 깨짐, 터미널 명령어 : chcp, terminal 인코딩 : cp 949
