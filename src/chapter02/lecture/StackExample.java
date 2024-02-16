@@ -1,6 +1,7 @@
 package chapter02.lecture;
 
 public class StackExample {
+    static int classVariable = 5; // 클래스 변수
 
     public static void main(String[] args) {
         int mainVariable = 10; // main 메서드의 지역 변수
