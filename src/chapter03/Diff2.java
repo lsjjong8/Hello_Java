@@ -6,10 +6,10 @@ public class Diff2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("실수 a:");
+        System.out.print("변수 a:");
         int a = sc.nextInt();
 
-        System.out.print("실수 b:");
+        System.out.print("변수 b:");
         int b = sc.nextInt();
 
         int diff = a >= b? a-b : b-a;
