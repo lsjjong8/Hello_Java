@@ -14,11 +14,11 @@ public class BalanceWrong {
         System.out.print("변수 B : ");
         int b = sc.nextInt();
 
-        int diff = a - b;
+        // int diff = a - b;
 
-        if(diff > 0)
+        if(a > b)
             System.out.println("A가 크다.");
-        else if(diff < 0)
+        else if(a < b)
             System.out.println("B가 크다.");
         else
             System.out.println("A와 B가 같다.");
