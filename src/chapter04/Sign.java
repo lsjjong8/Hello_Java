@@ -13,7 +13,9 @@ public class Sign {
             System.out.println("값이 양수입니다.");
         else if(n < 0)
             System.out.println("값이 음수입니다.");
-        else
+        else if(n == 0)
             System.out.println("값이 0입니다.");
+        else
+            ;
     }
 }
