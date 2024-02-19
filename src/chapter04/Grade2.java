@@ -21,5 +21,5 @@ public class Grade2 {
             System.out.println("우");
         else
             System.out.println("수");
-    } //
+    }
 }
