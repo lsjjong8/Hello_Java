@@ -6,15 +6,15 @@ public class Multiple {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("num1(피제수)을 입력하세요 : ");
-        int num1 = sc.nextInt();
+        System.out.print("변수 A : ");
+        int a = sc.nextInt();
 
-        System.out.print("num2(제수)을 입력하세요 : ");
-        int num2 = sc.nextInt();
+        System.out.print("변수 B : ");
+        int b = sc.nextInt();
 
-        boolean isMultiple = (num1 % num2 == 0);
+        boolean isMultiple = (a % b == 0);
 
-        String result = isMultiple? "num1는 num2의 배수임":"num1은 num2의 배수가 아님";
+        String result = isMultiple? "A는 B의 배수입니다.":"A는 B의 배수가 아닙니다.";
 
         System.out.println(result);
     }
