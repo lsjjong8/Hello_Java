@@ -10,6 +10,7 @@ public class Negative {
         int n = sc.nextInt();
         
         // if-then문:if (조건식) 실행문
+        // 조건식은 표현식과 다르게 boolean 형태로 return
         if(n < 0)
             // n < 0이 true(참)일 때 실행한다.
             System.out.println("이 값은 음의 값입니다.");
