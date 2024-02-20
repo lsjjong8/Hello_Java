@@ -19,6 +19,7 @@ public class ShiftOperator {
 
         //#2. 논리쉬프트 (>>>)
         System.out.println(3>>>1); //0000...0011 = 1
+        System.out.println(3>>>2&1); //0000...0011 = 1
         System.out.println(-3>>>31); //1111...1101 = 1
     }
 }
