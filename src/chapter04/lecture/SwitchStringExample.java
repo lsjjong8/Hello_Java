@@ -13,6 +13,7 @@ public class SwitchStringExample {
                 break;
             case "대리":
                 System.out.println("300만원");
+                break;
             default:
                 System.out.println("200만원");
         }
