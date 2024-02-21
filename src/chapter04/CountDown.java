@@ -16,6 +16,7 @@ public class CountDown {
 
         // while문
         while(x >= 0) {
+            // --x로 변경해보자
             System.out.println(x--); // x 값을 표시한 후 감소시킴
             System.out.println("x의 값이 " + x + "이 됐습니다."); // x값 표시
         }
