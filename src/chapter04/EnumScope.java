@@ -19,7 +19,7 @@ public class EnumScope {
         }
 
         do {
-            System.out.println(a + " ");
+            System.out.println(a + " "); // a++로 변경 가능
             a = a + 1;
         } while(a <= b);
         System.out.println();
