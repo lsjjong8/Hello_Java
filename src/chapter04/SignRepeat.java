@@ -2,7 +2,7 @@ package chapter04;
 
 import java.util.Scanner;
 
-public class SignRepeat {
+public class SignRepeat {//
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int retry; // 다시 한번?
