@@ -1,5 +1,5 @@
 package chapter05;
-
+//
 public class DoubleArray {
     public static void main(String[] args) {
         double[] a = new double[5];
