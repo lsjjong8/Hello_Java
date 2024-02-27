@@ -1,5 +1,5 @@
 package chapter05.lecture;
-//
+
 public class ArrayCopyByForExample {
     public static void main(String[] args) {
         int[] oldIntArray = {1, 2, 3};
