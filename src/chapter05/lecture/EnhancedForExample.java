@@ -1,5 +1,5 @@
 package chapter05.lecture;
-
+//
 public class EnhancedForExample {
     public static void main(String[] args) {
         int[] scores = {95, 71, 84, 93, 87};
