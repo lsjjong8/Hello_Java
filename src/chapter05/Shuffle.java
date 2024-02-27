@@ -2,7 +2,7 @@ package chapter05;
 
 import java.util.Random;
 import java.util.Scanner;
-
+//
 public class Shuffle {
     public static void main(String[] args) {
         Random rand = new Random();
