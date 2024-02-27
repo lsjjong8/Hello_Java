@@ -1,5 +1,5 @@
 package chapter05.lecture;
-
+//
 public class ArrayReferenceObjectExample {
     public static void main(String[] args) {
         String[] strArray = new String[3];
