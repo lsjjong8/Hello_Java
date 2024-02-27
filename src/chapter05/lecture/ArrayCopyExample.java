@@ -1,5 +1,5 @@
 package chapter05.lecture;
-//
+
 public class ArrayCopyExample {
     public static void main(String[] args) {
         String[] oldStrArray = {"java" , "array", "copy"};
