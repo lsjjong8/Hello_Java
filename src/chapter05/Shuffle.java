@@ -17,13 +17,24 @@ public class Shuffle {
             a[i] = sc.nextInt();
         }
 
-        for(int i=0; i<2*n;i++) {
+        /*for(int i=0; i<2*n;i++) {
             int idx1 = rand.nextInt(n);
             int idx2 = rand.nextInt(n);
 
             int temp = a[idx1];
             a[idx1] = a[idx2];
             a[idx2] = temp;
+        }*/
+
+        // Fisher-Yates 알고리즘
+        for(int i=n-1; i>0; i--) {
+            int j = rand.nextInt(i+1);
+
+            if(i!=j) {
+                int t = a[i];
+                a[i] = a[j];
+                a[j] = t;
+            }
         }
 
         System.out.println("요소를 섞었습니다.");
