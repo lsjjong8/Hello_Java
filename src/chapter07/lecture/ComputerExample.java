@@ -1,13 +1,13 @@
 package chapter07.lecture;
 
-public class Calculator {
+class Calculator {
     double areaCircle(double r) {
         System.out.println("Calculator 객체의 areaCircle() 실행");
         return 3.14*r*r;
     }
 }
 
-public class Computer extends Calculator {
+class Computer extends Calculator {
     @Override // 생략 가능하지만 실수를 방지, 컴파일러가 시그니처 동일 여부 확인
     double areaCircle(double r) {
         System.out.println("Computer 객체의 areaCircle() 실행");
