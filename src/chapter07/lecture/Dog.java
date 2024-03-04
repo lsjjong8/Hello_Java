@@ -13,4 +13,9 @@ public class Dog extends Animal {
         this.species = species;
         this.breed = breed;
     }
+
+    @Override
+    protected void makeSound() {
+        System.out.println(name + "가 멍멍 짖습니다.");
+    }
 }

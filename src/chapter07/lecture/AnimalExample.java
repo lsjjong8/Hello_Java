@@ -6,5 +6,8 @@ public class AnimalExample {
 
         Animal myDog = new Dog();
         Animal myCat = new Cat();
+
+        myDog.makeSound();
+        myCat.makeSound();
     }
 }
