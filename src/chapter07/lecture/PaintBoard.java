@@ -30,6 +30,7 @@ class Circle_ extends Shape_ {
     }
 
     // AbstractShape의 추상 메서드 구현
+    @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
     }
@@ -46,6 +47,7 @@ class Rectangle_ extends Shape_ {
     }
 
     // AbstractShape의 추상 메서드 구현
+    @Override
     public double calculateArea() {
         return width * height;
     }
