@@ -9,4 +9,8 @@ public class Cat extends Animal {
     protected void makeSound() {
         System.out.println(name + "가 야옹합니다.");
     }
+    @Override
+    protected void move() {
+        System.out.println(name + "가 살금살금 걷습니다.");
+    }
 }

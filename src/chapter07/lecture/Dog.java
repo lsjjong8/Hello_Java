@@ -18,4 +18,9 @@ public class Dog extends Animal {
     protected void makeSound() {
         System.out.println(name + "가 멍멍 짖습니다.");
     }
+
+    @Override
+    protected void move() {
+        System.out.println(name + "가 뛰어다닙니다.");
+    }
 }

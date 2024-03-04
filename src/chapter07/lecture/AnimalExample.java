@@ -9,5 +9,8 @@ public class AnimalExample {
 
         myDog.makeSound();
         myCat.makeSound();
+
+        myDog.makeSoundWhileMoving();
+        myCat.makeSoundWhileMoving();
     }
 }
