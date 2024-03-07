@@ -14,13 +14,13 @@ public class InverseNumber {
         return input;
     }
 
-    static int retry() {
+    static boolean shouldRetry() {
         int input;
         do {
             System.out.print("다시 한 번? <Yes...1/No...0>:");
             input = sc.nextInt();
         } while(input!=1 && input!=0);
-        return input;
+        return input == 1;
     }
 
     public static String printInverseNumber(int n) {
@@ -36,14 +36,14 @@ public class InverseNumber {
     }
 
     public static void main(String[] args) {
-        int x;
+        boolean needRetry;
         do {
             int n = readPlusInt();
 
             System.out.print("반대로 읽으면 " + printInverseNumber(n) + "입니다.");
 
-            x = retry();
+            needRetry = shouldRetry();
 
-        } while(x == 1);
+        } while(needRetry);
     }
 }
