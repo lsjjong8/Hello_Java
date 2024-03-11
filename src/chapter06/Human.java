@@ -2,9 +2,10 @@ package chapter06;
 
 public class Human {
     // 필드
-    String name; // 이름
-    int height; // 신장
-    int weight; // 체중
+    private String name; // 이름
+    private int height; // 신장
+    private int weight; // 체중
+
 
     // 생성자
     Human(String n, int h, int w) {
@@ -13,15 +14,15 @@ public class Human {
         weight = w;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public int getHeight() {
+    int getHeight() {
         return height;
     }
 
-    public int getWeight() {
+    int getWeight() {
         return weight;
     }
 
