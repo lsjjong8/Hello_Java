@@ -28,4 +28,18 @@ public class PrintArray {
         }
         System.out.print("}");
     }
+
+    static void printIntArray(int[] array) {
+        System.out.print("a = {");
+        if(array.length >= 2) {
+            for (int i = 0; i < array.length - 1; i++) {
+                System.out.print(array[i] + ", ");
+            }
+        }
+
+        if(array.length >= 1) {
+            System.out.print(array[array.length-1]);
+        }
+        System.out.print("}");
+    }
 }
