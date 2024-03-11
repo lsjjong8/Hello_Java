@@ -12,6 +12,10 @@ public class CoordinateTester3Error {
         Coordinate[] a = new Coordinate[num];
 
         for (int i = 0; i < a.length; i++) {
+            a[i] = new Coordinate();
+        }
+
+        for (int i = 0; i < a.length; i++) {
             a[i].set(5.5, 7.7);
         }
 
