@@ -30,7 +30,7 @@ public class PrintArray {
     }
 
     static void printIntArray(int[] array) {
-        System.out.print("a = {");
+        System.out.print("{");
         if(array.length >= 2) {
             for (int i = 0; i < array.length - 1; i++) {
                 System.out.print(array[i] + ", ");
