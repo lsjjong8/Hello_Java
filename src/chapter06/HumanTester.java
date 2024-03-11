@@ -2,16 +2,11 @@ package chapter06;
 
 public class HumanTester {
     public static void main(String[] args) {
-        Human gildong = new Human();
-        Human chulsu = new Human();
+        Human gildong = new Human("홍길동", 170, 60);
+        Human chulsu = new Human("김철수", 166, 72);
 
-        gildong.name = "홍길동";
-        gildong.height = 170;
-        gildong.weight = 60;
-
-        chulsu.name = "김철수";
-        chulsu.height = 166;
-        chulsu.weight = 72;
+        gildong.gainWeight(3); // 홍길동이 3kg 쪘다. gainWeight에 Paramter값 전달
+        chulsu.reduceWeight(5); // 김철수가 5kg 빠졌다. reduceWeight에 Paramter값 전달
 
         System.out.println("이름:" + gildong.name);
         System.out.println("신장:" + gildong.height + "cm");
