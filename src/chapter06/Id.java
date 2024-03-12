@@ -8,7 +8,13 @@ public class Id {
         id = ++counter;
     }
 
+    // 식별 번호 가져오기
     public int getId() {
         return id;
+    }
+
+    // 마지막에 부여한 식별 번호 가져오기
+    public static int getMaxId() {
+        return counter;
     }
 }
