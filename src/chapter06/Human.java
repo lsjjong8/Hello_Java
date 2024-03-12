@@ -6,6 +6,8 @@ public class Human {
     private int height; // 신장
     private int weight; // 체중
     private Day birthDay; // 생일
+    static int counter = 0; // 몇번까지 식별 번호를 부여했는가
+    private int id; // 식별 번호
 
     // 생성자
     public Human(String name, int height, int weight, Day birthDay) {
@@ -13,6 +15,7 @@ public class Human {
         this.height = height;
         this.weight = weight;
         this.birthDay = birthDay;
+        this.id = ++counter;
     }
 
     String getName() {
@@ -26,6 +29,8 @@ public class Human {
     int getWeight() {
         return weight;
     }
+
+    public int getId() { return id; } // 식별 번호 가져오기
 
     // 메서드
     void gainWeight(int w) {
