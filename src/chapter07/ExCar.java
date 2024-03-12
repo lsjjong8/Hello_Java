@@ -12,7 +12,8 @@ public class ExCar extends Car {  // 서브클래스 : 자식, // 하위클래�
         totalMileage = 0.0; // (추가)
     }
 
-    // 사양 표시
+    // 사양 표시 (오버라이딩)
+    @Override
     public void putSpec() {
         super.putSpec();
         System.out.printf("총 주행 거리: %.2f km\n", totalMileage); // (추가)
