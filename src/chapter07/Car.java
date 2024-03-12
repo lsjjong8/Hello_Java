@@ -2,7 +2,7 @@ package chapter07;
 
 import chapter06.Day;
 
-public class Car {
+public class Car extends Object { // 슈퍼클래스 : 부모, // 상위클래스 : 부모, 조부, 증조부
     private String name;        // 이름
     private int width;          // 폭
     private int height;         // 높이
