@@ -1,5 +1,7 @@
 package chapter06;
 
+import java.time.LocalDate;
+
 public class Day {
     // 필드
     private int year = 1; // 년
@@ -7,7 +9,12 @@ public class Day {
     private int date = 1; // 일
 
     // 생성자
-    public Day()                                {}
+    public Day() { // 오늘 날짜
+        LocalDate today = LocalDate.now(); // 현재 날짜
+        this.year = today.getYear();
+        this.month = today.getMonthValue();
+        this.date = today.getDayOfMonth();
+    }
     public Day(int year)                        { this.year = year; }
     public Day(int year, int month)             { this(year); this.month = month; }
     public Day(int year, int month, int date)   { this(year, month); this.date = date; }
