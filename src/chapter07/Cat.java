@@ -12,4 +12,9 @@ public class Cat extends Animal {
     public void bark() {
         System.out.println("냐옹!");
     }
+
+    @Override
+    public String toString() {
+        return age + "살의 " + getName();
+    }
 }

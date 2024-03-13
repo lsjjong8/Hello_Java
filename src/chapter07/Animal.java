@@ -8,10 +8,17 @@ public abstract class Animal {
     public Animal(String name) {
         this.name = name;
     }
-
-    public abstract void bark(); // 짖기
-
+    
+    // 메서드
     public String getName() {
         return name;
     }
+    public void introduce() {
+        System.out.print(toString()+"이다. ");
+        bark();
+    }
+
+    // 추상 메서드
+    public abstract void bark(); // 짖기
+    public abstract String toString();
 }

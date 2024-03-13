@@ -10,10 +10,13 @@ public class AnimalTester1 {
         animals[0] = new Dog("초코", "치와와"); // 개
         animals[1] = new Cat("나비", 7); // 고양이
 
-        for (Animal animal: animals) {
-            System.out.print(animal.getName() + " : ");
-            animal.bark();
-            System.out.println();
+        for (int i=0; i < animals.length; i++) {
+            System.out.println("animal[" + i + "] = " + animals[i]);
+        }
+
+        for (int i = 0; i < animals.length; i++) {
+            System.out.print("animal[" + i + "] = ");
+            animals[i].introduce();
         }
     }
 }

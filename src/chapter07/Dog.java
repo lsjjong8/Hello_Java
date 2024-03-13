@@ -12,4 +12,9 @@ public class Dog extends Animal {
     public void bark() {
         System.out.println("멍멍!");
     }
+
+    @Override
+    public String toString() {
+        return type + "종인 " + getName();
+    }
 }
