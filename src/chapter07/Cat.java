@@ -8,6 +8,7 @@ public class Cat extends Animal {
         this.age = age;
     }
 
+    @Override
     public void bark() {
         System.out.println("냐옹!");
     }
