@@ -1,6 +1,6 @@
 package chapter07;
 
-public class Animal {
+public abstract class Animal {
     // 필드
     private String name;
 
@@ -9,9 +9,7 @@ public class Animal {
         this.name = name;
     }
 
-    public void bark() { // 짖기
-        System.out.println("짖는다!");
-    }
+    public abstract void bark(); // 짖기
 
     public String getName() {
         return name;
