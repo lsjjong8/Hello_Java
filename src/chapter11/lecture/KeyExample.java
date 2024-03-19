@@ -18,6 +18,11 @@ class Key {
             return false;
         }
     }
+
+    @Override
+    public int hashCode() {
+        return number;
+    }
 }
 public class KeyExample {
     public static void main(String[] args) {
