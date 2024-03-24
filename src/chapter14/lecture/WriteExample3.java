@@ -10,7 +10,7 @@ public class WriteExample3 {
 
         byte[] array = {10, 20, 30, 40, 50};
 
-        os.write(array, 1, 3); // 1번 인덱스부터 3개를 출력
+        os.write(array, 1, 3); // 1번 인덱스부터 3개를 출력, 20, 30, 40
 
         os.flush();
         os.close();
