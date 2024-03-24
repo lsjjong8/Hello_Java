@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class WriteExample {
+public class WriteExample1 {
     public static void main(String[] args) throws IOException {
         OutputStream os = new FileOutputStream("C:/Temp/test1.txt");
 
