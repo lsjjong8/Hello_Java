@@ -2,9 +2,9 @@ package chapter04.lecture;
 
 public class SwitchCharExample {
     public static void main(String[] args) {
-        char memberShipGrade = 'B';
+        char membershipGrade = 'B';
 
-        switch(memberShipGrade) {
+        switch(membershipGrade) {
             case 'A':
             case 'a':
                 System.out.println("우수 회원입니다.");
