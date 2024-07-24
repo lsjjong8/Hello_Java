@@ -9,7 +9,7 @@ public class Bank {
         boolean needRun = true;
         int balance = 0;
 
-        do {
+        while(needRun) {
             System.out.println("----------------------------------------------");
             System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4. 종료");
             System.out.println("----------------------------------------------");
@@ -25,7 +25,7 @@ public class Bank {
                 case 2: // 출금
                     System.out.print("출금액> ");
                     int drawAmount = sc.nextInt();
-                    if(balance >= drawAmount) {
+                    if (balance >= drawAmount) {
                         balance -= drawAmount;
                     } else {
                         System.out.println("잔고가 부족합니다.");
@@ -38,8 +38,10 @@ public class Bank {
                 case 4: // 종료
                     needRun = false;
                     break;
+                default:
+                    System.out.println("잘못 입력하셨습니다.");
             }
-        } while(needRun);
+        }
 
         System.out.println("프로그램 종료");
     }
