@@ -20,13 +20,16 @@ public class Bank {
             switch (cmd) {
                 case 1: // 예금
                     System.out.print("예금액> ");
-                    balance += sc.nextInt();
+                    int deposit = sc.nextInt();
+
+                    balance += deposit;
                     break;
                 case 2: // 출금
                     System.out.print("출금액> ");
-                    int drawAmount = sc.nextInt();
-                    if (balance >= drawAmount) {
-                        balance -= drawAmount;
+                    int withdraw = sc.nextInt();
+
+                    if (balance >= withdraw) {
+                        balance -= withdraw;
                     } else {
                         System.out.println("잔고가 부족합니다.");
                     }
