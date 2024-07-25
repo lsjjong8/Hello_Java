@@ -1,4 +1,4 @@
-package chapter09.lecture;
+package chapter05.lecture;
 
 public class EnumWeekExample2 {
     public static void main(String[] args) {
