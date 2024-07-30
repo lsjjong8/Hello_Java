@@ -1,37 +1,47 @@
 package chapter06.lecture;
 
-public class VariableExample {
-    // 인스턴스 변수 (전역 변수)
-    int globalVariable;
+class Scope {
+    // 클래스 변수
+    public static int staticVariable;
 
-    // 클래스 변수 (static 변수)
-    static int staticVariable;
+    // 인스턴스 변수
+    public int instanceVariable;
 
-    public void exampleMethod() {
-        // 지역 변수
-        int localVar = 42;
+    // 정적 메소드
+    public static void doStaticMethod() {
+        // globalVariable = 100; // 에러
+        staticVariable = 200; // 클래스 변수
+        int localVariable = 300; // 지역 변수
 
-        // 전역 변수에 값 할당
-        globalVariable = 100;
-
-        // 클래스 변수에 값 할당
-        staticVariable = 200;
-
-        // 출력: 전역 변수, 클래스 변수, 지역 변수의 값 출력
-        System.out.println("전역 변수: " + globalVariable);
+        // 출력
+        // System.out.println("인스턴스 변수: " + globalVariable);
         System.out.println("클래스 변수: " + staticVariable);
-        System.out.println("지역 변수: " + localVar);
+        System.out.println("지역 변수:" + localVariable);
     }
 
+    // 인스턴스 메소드
+    public void doMethod() {
+        instanceVariable = 100; // 인스턴스 변수
+        staticVariable = 200; // 클래스 변수
+        int localVariable = 300; // 지역 변수
+
+        // 출력
+        System.out.println("인스턴스 변수: " + instanceVariable);
+        System.out.println("클래스 변수: " + staticVariable);
+        System.out.println("지역 변수:" + localVariable);
+    }
+}
+
+public class VariableExample {
     public static void main(String[] args) {
-        // 클래스의 인스턴스 생성
-        VariableExample instance = new VariableExample();
+        System.out.println("클래스 변수 (인스턴스 없이 접근 가능): " + Scope.staticVariable);
+        Scope.doStaticMethod();
 
-        // exampleMethod 호출
-        instance.exampleMethod();
+        // 인스턴스 생성
+        Scope instance = new Scope();
 
-        // 출력: 전역 변수와 클래스 변수는 클래스의 인스턴스 없이도 접근 가능
-        System.out.println("전역 변수 (클래스 인스턴스 없이 접근): " + instance.globalVariable);
-        System.out.println("클래스 변수 (클래스 인스턴스 없이 접근): " + staticVariable);
+        instance.doMethod();
+
+        System.out.println("인스턴스 변수 (접근하려면 인스턴스 필요): " + instance.instanceVariable);
     }
 }
