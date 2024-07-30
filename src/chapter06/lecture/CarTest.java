@@ -1,7 +1,7 @@
 package chapter06.lecture;
 
 public class CarTest {
-    public static void main() {
+    public static void main(String[] args) {
         // 생성자 호출
         Car car = new Car();
         Car spark = new Car("스파크");
