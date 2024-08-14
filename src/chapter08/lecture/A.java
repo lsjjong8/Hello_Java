@@ -5,6 +5,7 @@ public class A {
         System.out.println("A 객체가 생성됨");
     }
 
+    // Java version 11 기준
     class B {
         B() {
             System.out.println("B 객체가 생성됨");
