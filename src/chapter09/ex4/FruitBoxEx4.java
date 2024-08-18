@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class FruitBoxEx4 {
+public class FruitBoxEx4 { //
     public static void main(String[] args) {
         FruitBox<Apple> appleBox = new FruitBox<Apple>();
         FruitBox<Grape> grapeBox = new FruitBox<Grape>();
