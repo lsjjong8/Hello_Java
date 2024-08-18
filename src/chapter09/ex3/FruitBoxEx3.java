@@ -2,7 +2,7 @@ package chapter09.ex3;
 
 import java.util.ArrayList;
 
-public class FruitBoxEx3 {
+public class FruitBoxEx3 { //
     public static void main(String[] args) {
         FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
         FruitBox<Apple> appleBox = new FruitBox<Apple>();
