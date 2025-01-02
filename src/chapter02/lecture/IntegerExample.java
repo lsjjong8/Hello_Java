@@ -15,7 +15,7 @@ public class IntegerExample {
         System.out.println(c);              // 변수 c 출력
 
         long d = -50;                       // short형 변수 d
-        // d = -9_223_372_036_854_775_809;  // 컴파일 오류
+        // d = -9_223_372_036_854_775_809l;  // 컴파일 오류
         System.out.println(d);              // 변수 d 출력
     }
 }
