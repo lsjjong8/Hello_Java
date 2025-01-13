@@ -25,19 +25,19 @@ public class StringEqualsExample {
             System.out.println(System.identityHashCode(str3));
             System.out.println(System.identityHashCode(str4));
         } else {
-            System.out.println("str1과 str2는 참조가 다름");
+            System.out.println("str3과 str4는 참조가 다름");
         }
 
         if(str3.equals(str4)) {
-            System.out.println("str1과 str2는 문자열이 같음");
+            System.out.println("str3과 str4는 문자열이 같음");
         }
 
         Integer num1 = Integer.valueOf(128);
         Integer num2 = Integer.valueOf(128);
 
         System.out.println(num1 == num2);
-        System.out.println(System.identityHashCode(str1));
-        System.out.println(System.identityHashCode(str2));
+        System.out.println(System.identityHashCode(num1));
+        System.out.println(System.identityHashCode(num2));
 
         Integer num3 = Integer.valueOf(1);
         Integer num4 = Integer.valueOf(1);
